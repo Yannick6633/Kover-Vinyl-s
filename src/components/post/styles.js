@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
         width: '100%',
         aspectRatio: 3 / 3,
         resizeMode: 'cover',
-        borderRadius: 5,
+        borderWidth: 1,
+        borderRadius: 10,
     },
     band: {
         marginVertical: 10,
@@ -24,6 +25,11 @@ const styles = StyleSheet.create({
         fontSize: 15,
         lineHeight: 26,
         color: '#5c5656',
+    },
+    quality: {
+        marginVertical: 10,
+        fontSize: 18,
+        color: '#f10a0a'
     },
     prices: {
         marginVertical: 10,

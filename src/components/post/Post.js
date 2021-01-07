@@ -28,6 +28,10 @@ const Post = (props) => {
                 {post.description}
             </Text>
 
+            <Text style={styles.quality}>
+                State : {post.quality}
+            </Text>
+
             {/*Price*/}
             <Text style={styles.prices}>
                 {post.price} €

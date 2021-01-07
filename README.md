@@ -17,6 +17,19 @@
 
 ## Pour en savoir plus: https://expo.io/
 
+## React-Navigation Library :
+    . npm install @react-navigation/native @react-navigation/stack
+    . npm install @react-navigation/bottom-tabs
+
+## Dependencies : 
+    . npm install react-native-screens
+    . npm install react-native-reanimated  
+    . npm install react-native-gesture-handler 
+    . npm install react-native-safe-area-context
+    . npm install @react-native-community/masked-view
+
+
+
 
 
 

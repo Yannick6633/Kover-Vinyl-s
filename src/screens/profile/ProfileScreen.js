@@ -1,10 +1,11 @@
 import React from 'react';
+import {Text} from "react-native";
 
 const ProfileScreen = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <Text>Page profile</Text>
+        </>
     );
 };
 
