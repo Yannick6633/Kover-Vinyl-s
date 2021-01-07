@@ -8,8 +8,7 @@ import {
 import styles from './styles';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 
-const HomeScreen = (props) => {
-
+const HomeScreen = () => {
 
     return (
         <View>
@@ -27,7 +26,7 @@ const HomeScreen = (props) => {
                 
                 <Pressable
                     style={styles.button}
-                    onPress={() => console.warn('Explore Btn clicked')}>
+                    onPress={() => console.warn('Sign up Btn clicked')}>
                     <Text style={styles.buttonText}>Sign Up</Text>
                 </Pressable>
             </ImageBackground>
