@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-       margin: 20,
+        margin: 20,
     },
     image: {
         width: '100%',
@@ -38,6 +38,11 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#000',
         textDecorationLine: 'underline',
+    },
+    longDescription: {
+        marginVertical: 20,
+        fontSize: 16,
+        lineHeight: 24,
     }
 });
 

@@ -5,6 +5,8 @@ import SearchResultScreen from "../screens/searchResultsPage/SearchResultScreen"
 import ProfileScreen from "../screens/profile/ProfileScreen";
 
 import HomeTabNavigator from "./HomeTabNavigator";
+import PostScreen from "../screens/post/PostScreen";
+import DetailPost from "../components/detailPost/DetailPost";
 
 const Stack = createStackNavigator();
 
@@ -13,7 +15,7 @@ const Router = () => {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen
-                    name={"HomeScreen"}
+                    name={"Home"}
                     component={HomeTabNavigator}
                     options={{
                         headerShown: false,
@@ -24,7 +26,7 @@ const Router = () => {
                     name={"Search Results Page"}
                     component={SearchResultScreen}
                     options={{
-                        title: "Seeking your happiness"
+                        title: "Seeking your happiness",
                     }}
                 />
 
@@ -33,6 +35,14 @@ const Router = () => {
                     component={ProfileScreen}
                     options={{
                         title: "Your Profile"
+                    }}
+                />
+
+                <Stack.Screen
+                    name={"Post"}
+                    component={PostScreen}
+                    options={{
+                        title: "Detail article"
                     }}
                 />
 

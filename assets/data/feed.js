@@ -5,7 +5,8 @@ export default [
         "title": "Ibrahim Maalouf - Red & Black Light",
         "genre": "Jazz",
         "quality": "Mint",
-        "description": "top album...",
+        "description": "Le petit chouchou du jazz sous influence (orientale) fait son /outing/ " +
+            "le plus pop dans un show calibré au spot près, avec tapis de synthés festifs et valse d'invités ...",
         "price": 20,
     },
     {
@@ -21,7 +22,7 @@ export default [
         "id": "2",
         "image": "https://m.media-amazon.com/images/I/A1e9AbQza-L._SS500_.jpg",
         "title": "The Murder Capital - When I Have Fears",
-        "genre": "Post Punk",
+        "genre": "DetailPost Punk",
         "quality": "Mint",
         "description": "Le futur du punk est entre leurs mains.",
         "price": 25,
