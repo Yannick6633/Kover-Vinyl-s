@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
         width: '100%',
         aspectRatio: 3 / 3,
         resizeMode: 'cover',
+        borderRadius: 5,
     },
     band: {
         marginVertical: 10,
