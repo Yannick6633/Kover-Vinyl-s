@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
         shadowRadius: 3,
         elevation: 5,
     },
-
     textView: {
         position: 'absolute',
         bottom: 10,
@@ -43,16 +42,9 @@ const styles = StyleSheet.create({
         borderRadius: 10
     },
     itemTitle: {
-        color: '#fff',
+        color: 'white',
         fontSize: 22,
         shadowColor: '#000',
-        fontSize: 20,
-        color:'#1a1818',
-        width: '70%',
-        marginLeft: 20,
-        marginTop: 25,
-    },
-    title: {
         shadowOffset: { width: 0.8, height: 0.8 },
         shadowOpacity: 1,
         shadowRadius: 3,
@@ -60,7 +52,6 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         elevation: 5
     },
-
     itemDescription: {
         color: 'white',
         fontSize: 12,
@@ -71,5 +62,6 @@ const styles = StyleSheet.create({
         elevation: 5
     }
 })
+
 
 export default CarouselItem
