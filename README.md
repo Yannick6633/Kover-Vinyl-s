@@ -1,4 +1,4 @@
-# Kover Vinyl's 
+# Koverteck
 ### App React Native 
 
 ## Pour la création du projet  React Native CLI:
