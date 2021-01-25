@@ -8,11 +8,16 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     title: {
-        fontSize: 50,
-        fontWeight: 'bold',
         color:'#fff',
-        width: '70%',
+        fontSize: 30,
+        shadowColor: '#000',
+        shadowOffset: { width: 0.8, height: 0.8 },
+        shadowOpacity: 1,
+        shadowRadius: 3,
+        marginBottom: 5,
+        fontWeight: 'bold',
         marginLeft: 25,
+        elevation: 5
     },
     button: {
         backgroundColor: '#fff',
@@ -42,8 +47,14 @@ const styles = StyleSheet.create({
         zIndex: 100,
     },
     searchButtonText: {
-        fontSize: 16,
-        fontWeight: 'bold',
+        color: '#000',
+        fontSize: 22,
+        shadowColor: '#000',
+        shadowOffset: { width: 0.8, height: 0.8 },
+        shadowOpacity: 1,
+        shadowRadius: 3,
+        marginBottom: 5,
+        elevation: 5
     },
 });
 

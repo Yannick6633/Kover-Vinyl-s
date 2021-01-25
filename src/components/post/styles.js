@@ -13,10 +13,15 @@ const styles = StyleSheet.create({
         top: 20,
     },
     band: {
+        fontSize: 22,
         marginVertical: 30,
-        fontWeight: 'bold',
-        fontSize: 16,
-        color: '#000',
+        shadowColor: '#000',
+        shadowOffset: { width: 0.8, height: 0.8 },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
+        marginBottom: 5,
+        fontWeight: "bold",
+        elevation: 5
     },
     types: {
         fontSize: 15,

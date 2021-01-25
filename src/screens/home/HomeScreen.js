@@ -22,17 +22,14 @@ const HomeScreen = () => {
     return (
 
         <View>
-            <>
-                <AppBar />
-                <CarouselScreen data={Data}/>
-            </>
+            <AppBar />
 
-
+            <CarouselScreen data={Data}/>
 
             <ImageBackground
                 source={require('../../../assets/images/spirale.jpeg')}
                 style={styles.image}>
-                <Text style={styles.title}>N°1 in used vinyl</Text>
+                <Text style={styles.title}>Koverteck</Text>
 
                 <Pressable
                     style={styles.searchButton}
@@ -48,6 +45,7 @@ const HomeScreen = () => {
                 </Pressable>
 
             </ImageBackground>
+
         </View>
     );
 };

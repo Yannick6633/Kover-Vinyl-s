@@ -43,9 +43,15 @@ const styles = StyleSheet.create({
         borderRadius: 10
     },
     itemTitle: {
-        color: 'white',
+        color: '#fff',
         fontSize: 22,
-        shadowColor: '#000',
+        shadowColor: '#000', title: {
+        fontSize: 20,
+        color:'#1a1818',
+        width: '70%',
+        marginLeft: 20,
+        marginTop: 25,
+    },
         shadowOffset: { width: 0.8, height: 0.8 },
         shadowOpacity: 1,
         shadowRadius: 3,

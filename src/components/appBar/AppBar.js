@@ -8,11 +8,11 @@ import styles from './styles.js';
 const AppBar = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Kover Vinyl</Text>
-
-
-
+            <View style={styles.textView}>
+                <Text style={styles.title}>Koverteck</Text>
+            </View>
         </View>
+
     )
 }
 

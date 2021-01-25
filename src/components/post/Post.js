@@ -30,20 +30,6 @@ const Post = (props) => {
                 {post.title}
             </Text>
 
-            {/*Type*/}
-            <Text style={styles.types}>
-                {post.genre}
-            </Text>
-
-            {/*Description*/}
-            <Text style={styles.description} numberOfLines={2}>
-                {post.description}
-            </Text>
-
-            <Text style={styles.quality}>
-                State : {post.quality}
-            </Text>
-
             {/*Price*/}
             <Text style={styles.prices}>
                 {post.price} €
