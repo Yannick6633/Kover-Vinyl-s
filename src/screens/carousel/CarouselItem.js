@@ -45,13 +45,14 @@ const styles = StyleSheet.create({
     itemTitle: {
         color: '#fff',
         fontSize: 22,
-        shadowColor: '#000', title: {
+        shadowColor: '#000',
         fontSize: 20,
         color:'#1a1818',
         width: '70%',
         marginLeft: 20,
         marginTop: 25,
     },
+    title: {
         shadowOffset: { width: 0.8, height: 0.8 },
         shadowOpacity: 1,
         shadowRadius: 3,
@@ -59,6 +60,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         elevation: 5
     },
+
     itemDescription: {
         color: 'white',
         fontSize: 12,
