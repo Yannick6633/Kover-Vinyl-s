@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-       margin: 20,
+        margin: 20,
     },
     image: {
         flex: 1,
@@ -18,18 +18,7 @@ const styles = StyleSheet.create({
         shadowRadius: 3,
         elevation: 5,
     },
-    band: {
-        fontSize: 22,    margin: 10,
-        marginVertical: 30,
-        shadowColor: '#000',
-        shadowOffset: { width: 0.8, height: 0.8 },
-        shadowOpacity: 0.5,
-        shadowRadius: 3,
-        marginBottom: 5,
-        fontWeight: "bold",
-        elevation: 5
-    },
-    prices: {
+    genre: {
         marginVertical: 10,
         fontSize: 18,
         fontWeight: 'bold',

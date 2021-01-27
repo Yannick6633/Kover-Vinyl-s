@@ -4,7 +4,7 @@ import { View, StyleSheet, Text, Image, Dimensions } from 'react-native'
 const { width, height } = Dimensions.get('window')
 
 
-const CarouselItem = ({ item }) => {
+const GenderItem = ({ item }) => {
     return (
         <View style={styles.cardView}>
             <Image style={styles.image} source={{ uri: item.url }} />
@@ -52,16 +52,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         elevation: 5
     },
-    itemDescription: {
-        color: 'white',
-        fontSize: 12,
-        shadowColor: '#000',
-        shadowOffset: { width: 0.8, height: 0.8 },
-        shadowOpacity: 1,
-        shadowRadius: 3,
-        elevation: 5
-    }
 })
 
 
-export default CarouselItem
+export default GenderItem

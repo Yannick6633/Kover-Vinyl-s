@@ -1,13 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import {View, StyleSheet, Dimensions, FlatList, Animated} from 'react-native'
-import CarouselItem from './CarouselItem'
+import {View, StyleSheet, Dimensions, FlatList, Animated, Pressable} from 'react-native';
 
-import {useNavigation} from "@react-navigation/native";
+import GenderItem from './GenderItem'
+import { useNavigation } from '@react-navigation/native';
 
-const {width} = Dimensions.get('window')
-
-
-//this.flatList = FlatList;
+const {width} = Dimensions.get('window');
 
 function infiniteScroll(dataList) {
     const numberOfData = dataList.length
@@ -23,12 +20,12 @@ function infiniteScroll(dataList) {
             scrolled = 0
         }
 
-        //this.flatList.scrollToOffset({ animated: true, offset: scrollValue})
-
     }, 4000)
 }
 
-const Carousel = ({data}) => {
+const GenderScreen = ({data}) => {
+
+    const navigation = useNavigation();
 
     const scrollX = new Animated.Value(0)
     let position = Animated.divide(scrollX, width)
@@ -43,10 +40,8 @@ const Carousel = ({data}) => {
         return (
             <View style={{backgroundColor: '#ece2e2'}}>
 
-                    <FlatList data={data}
-                              ref={(flatList) => {
-                                  this.flatList = flatList
-                              }}
+                    <FlatList
+                              data={data}
                               keyExtractor={(item, index) => 'key' + index}
                               horizontal
                               pagingEnabled
@@ -56,7 +51,7 @@ const Carousel = ({data}) => {
                               decelerationRate={"fast"}
                               showsHorizontalScrollIndicator={false}
                               renderItem={({item}) => {
-                                  return <CarouselItem item={item}/>
+                                  return <GenderItem item={item}/>
                               }}
                               onScroll={Animated.event(
                                   [{nativeEvent: {contentOffset: {x: scrollX}}}]
@@ -98,4 +93,4 @@ const styles = StyleSheet.create({
     dotView: {flexDirection: 'row', justifyContent: 'center'}
 })
 
-export default Carousel;
+export default GenderScreen;

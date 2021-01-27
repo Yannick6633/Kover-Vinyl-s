@@ -12,7 +12,7 @@ const PostScreen = () => {
     const post = places.find(place => place.id === route.params.postId);
 
     return (
-        <View style={{backgroundColor: '#ece2e2'}}>
+        <View style={{backgroundColor: '#fff'}}>
             <DetailPost post={post} />
         </View>
     );

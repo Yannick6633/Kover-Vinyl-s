@@ -26,7 +26,7 @@ const Router = () => {
                     name={"Search Results Page"}
                     component={SearchResultScreen}
                     options={{
-                        title: "Seeking your happiness",
+                        title: "Articles",
                     }}
                 />
 

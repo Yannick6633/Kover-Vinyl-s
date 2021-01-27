@@ -1,50 +1,74 @@
-import React from 'react';
-import {
-    Text,
-    View,
-    ImageBackground,
-    Pressable,
-} from "react-native";
+import React, { useState } from 'react';
+import { View, Pressable } from "react-native";
 import styles from './styles';
-import Fontisto from 'react-native-vector-icons/Fontisto';
+
 import { useNavigation } from '@react-navigation/native';
 
 import CarouselScreen from "../carousel/CarouselScreen";
-import AppBar from "../../components/appBar/AppBar";
-import {Data} from "../../../assets/data/Data";
+import { Data } from "../../../assets/data/Data";
+
+import GenderScreen from "../gender/GenderScreen";
+import { Gender } from "../../../assets/data/Gender";
+
+import {Appbar, Card, Paragraph, Title } from 'react-native-paper';
+import { Platform } from 'react-native';
+
+import { Searchbar } from 'react-native-paper';
 
 
+const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'dots-vertical';
 
 const HomeScreen = () => {
 
     const navigation = useNavigation();
 
+    const [showSearch, setShowSearch] = useState(false);
+    const [loading, setLoading] = useState(true);
+    const [searchQuery, setSearchQuery] = React.useState('');
+
+    setTimeout(() => {
+        setLoading(false);
+    }, 300)
+
+    const onChangeSearch = query => setSearchQuery(query);
+
+
     return (
+            <View>
+                <Appbar.Header>
+                    <Appbar.Content title="Koverteck" subtitle={'Petites annonces'} />
+                    <Appbar.Action icon="magnify" onPress={() => { setShowSearch(!showSearch) }} />
+                    <Appbar.Action icon={MORE_ICON} onPress={() => {}} />
+                </Appbar.Header>
 
-        <View>
-            <AppBar />
+                { showSearch &&
+                <View style={styles.search}>
+                    <Searchbar
+                        placeholder="Recherche"
+                        onChangeText={onChangeSearch}
+                        value={searchQuery}
+                    /></View>
+                }
+                <View>
+                    <CarouselScreen data={Data}/>
+                </View>
 
-            <CarouselScreen data={Data}/>
+                <View>
+                    <GenderScreen data={Gender} />
+                </View>
 
-            <ImageBackground
-                source={require('../../../assets/images/spirale.jpeg')}
-                style={styles.image}>
-                <Text style={styles.title}>Koverteck</Text>
+                {/*   <View>
+                    <Pressable onPress={() => navigation.navigate('Search Results Page')}>
+                        <Card>
+                            <Card.Cover source={require('../../../assets/images/spirale.jpeg')}/>
+                            <Card.Content>
+                                <Title>Card title</Title>
+                                <Paragraph>Card content</Paragraph>
+                            </Card.Content>
+                        </Card>
+                    </Pressable>
 
-                <Pressable
-                    style={styles.searchButton}
-                    onPress={() => navigation.navigate('Search Results Page')}>
-                    <Fontisto name="search" size={25} color={'#f15454'} />
-                    <Text style={styles.searchButtonText}>What do you want..?</Text>
-                </Pressable>
-
-                <Pressable
-                    style={styles.button}
-                    onPress={() => console.warn('Sign up Btn clicked')}>
-                    <Text style={styles.buttonText}>Sign Up</Text>
-                </Pressable>
-
-            </ImageBackground>
+                </View>*/}
 
         </View>
     );

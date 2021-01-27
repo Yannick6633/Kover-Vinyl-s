@@ -5,12 +5,19 @@ const styles = StyleSheet.create({
         margin: 20,
     },
     image: {
+        flex: 1,
         width: '100%',
         aspectRatio: 3 / 3,
         resizeMode: 'cover',
         borderWidth: 1,
         borderRadius: 10,
+        backgroundColor: '#fff',
         top: 20,
+        shadowColor: '#000',
+        shadowOffset: { width: 0.5, height: 0.5 },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
+        elevation: 5,
     },
     band: {
         shadowColor: '#000',
@@ -44,7 +51,7 @@ const styles = StyleSheet.create({
     quality: {
         marginVertical: 10,
         fontSize: 18,
-        color: '#f10a0a'
+        color: '#bf082c'
     },
     prices: {
         marginVertical: 10,

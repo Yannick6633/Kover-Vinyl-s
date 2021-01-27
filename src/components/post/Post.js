@@ -2,7 +2,7 @@ import React from 'react';
 import {
     Text,
     Image,
-    Pressable,
+    Pressable, View,
 } from "react-native";
 import styles from './styles.js';
 import { useNavigation } from '@react-navigation/native';
@@ -19,6 +19,7 @@ const Post = (props) => {
     }
 
     return (
+        <View style={styles.cardView}>
         <Pressable onPress={goToPostPage} style={styles.container}>
             {/*Image*/}
             <Image
@@ -35,6 +36,7 @@ const Post = (props) => {
                 {post.price} €
             </Text>
         </Pressable>
+        </View>
     );
 };
 
