@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         marginVertical: 20,
         fontSize: 16,
         lineHeight: 24,
-    }
+    },
 });
 
 export default styles;

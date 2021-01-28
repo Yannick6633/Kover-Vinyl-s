@@ -3,10 +3,15 @@ import {
     Text,
     Image,
     Pressable, View,
+    Alert,
+    Button
 } from "react-native";
 import styles from './styles.js';
 import { useNavigation } from '@react-navigation/native';
 
+const Separator = () => (
+    <View style={styles.separator} />
+);
 
 const Post = (props) => {
 
@@ -36,7 +41,9 @@ const Post = (props) => {
                 {post.price} €
             </Text>
         </Pressable>
+            <Separator />
         </View>
+
     );
 };
 

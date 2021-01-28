@@ -1,59 +1,50 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
+const { width, height } = Dimensions.get('window')
+
 const styles = StyleSheet.create({
-    image: {
-        width: '100%',
-        height: 600,
-        resizeMode: 'cover',
-        justifyContent: 'center',
-    },
-    title: {
-        color:'#fff',
-        fontSize: 30,
-        shadowColor: '#000',
-        shadowOffset: { width: 0.8, height: 0.8 },
-        shadowOpacity: 1,
-        shadowRadius: 3,
-        marginBottom: 5,
-        fontWeight: 'bold',
-        marginLeft: 25,
-        elevation: 5
-    },
-    button: {
+    cardView: {
+        flex: 1,
+        width: width - 20,
+        height: height / 3,
         backgroundColor: '#fff',
-        width: 200,
-        height: 40,
+        margin: 10,
         borderRadius: 10,
-        marginTop: 25,
-        marginLeft: 25,
-        justifyContent: 'center',
-        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0.5, height: 0.5 },
+        shadowOpacity: 0.5,
+        shadowRadius: 3,
+        elevation: 5,
     },
-    buttonText: {
-        fontSize: 16,
-        fontWeight: 'bold',
-    },
-    searchButton: {
-        backgroundColor: '#fff',
-        height: 60,
-        width: Dimensions.get('screen').width - 20,
-        borderRadius: 30,
-        marginHorizontal: 10,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
+    textView: {
         position: 'absolute',
-        top: 90,
-        zIndex: 100,
+        bottom: 10,
+        margin: 10,
+        left: 5,
     },
-    searchButtonText: {
-        color: '#000',
+    image: {
+        width: width - 20,
+        height: height / 3,
+        borderRadius: 10
+    },
+    itemTitle: {
+        color: 'white',
         fontSize: 22,
         shadowColor: '#000',
         shadowOffset: { width: 0.8, height: 0.8 },
         shadowOpacity: 1,
         shadowRadius: 3,
         marginBottom: 5,
+        fontWeight: "bold",
+        elevation: 5
+    },
+    itemDescription: {
+        color: 'white',
+        fontSize: 12,
+        shadowColor: '#000',
+        shadowOffset: { width: 0.8, height: 0.8 },
+        shadowOpacity: 1,
+        shadowRadius: 3,
         elevation: 5
     },
 });

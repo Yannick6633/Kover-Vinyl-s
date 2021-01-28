@@ -35,7 +35,12 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#db0707',
         textDecorationLine: 'underline',
-    }
+    },
+    separator: {
+        marginVertical: 8,
+        borderBottomColor: '#171616',
+        borderBottomWidth: StyleSheet.hairlineWidth,
+    },
 });
 
 export default styles;

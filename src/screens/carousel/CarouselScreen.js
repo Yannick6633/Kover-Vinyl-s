@@ -1,11 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import {View, StyleSheet, Dimensions, FlatList, Animated} from 'react-native'
 import CarouselItem from './CarouselItem'
-
-import {useNavigation} from "@react-navigation/native";
+import {Text} from "react-native-paper";
 
 const {width} = Dimensions.get('window')
-
 
 //this.flatList = FlatList;
 
@@ -25,7 +23,7 @@ function infiniteScroll(dataList) {
 
         //this.flatList.scrollToOffset({ animated: true, offset: scrollValue})
 
-    }, 4000)
+    }, 3000)
 }
 
 const Carousel = ({data}) => {
@@ -42,10 +40,10 @@ const Carousel = ({data}) => {
     if (data && data.length) {
         return (
             <View style={{backgroundColor: '#ece2e2'}}>
-
                     <FlatList data={data}
                               ref={(flatList) => {
                                   this.flatList = flatList
+
                               }}
                               keyExtractor={(item, index) => 'key' + index}
                               horizontal

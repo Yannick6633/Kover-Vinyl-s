@@ -8,7 +8,6 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import Feather from "react-native-vector-icons/Feather";
 import Saved from "../screens/saved/Saved";
-import ExploreScreen from "../screens/explore/ExploreScreen";
 import SearchResultScreen from "../screens/searchResultsPage/SearchResultScreen";
 
 const Tab = createBottomTabNavigator();
